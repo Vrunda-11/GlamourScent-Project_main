@@ -1,0 +1,468 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8F3F25CD-3E2C-4589-BEEC-E7ABCD6A74C4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GlamourScent</RootNamespace>
+    <AssemblyName>GlamourScent</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Tamplate Files\backup\about.php" />
+    <Content Include="Tamplate Files\backup\account.php" />
+    <Content Include="Tamplate Files\backup\blog_page.php" />
+    <Content Include="Tamplate Files\backup\cart_page.php" />
+    <Content Include="Tamplate Files\backup\category_page.php" />
+    <Content Include="Tamplate Files\backup\category_page_3col.php" />
+    <Content Include="Tamplate Files\backup\category_page_left.php" />
+    <Content Include="Tamplate Files\backup\category_page_right.php" />
+    <Content Include="Tamplate Files\backup\checkout_page.php" />
+    <Content Include="Tamplate Files\backup\contact.php" />
+    <Content Include="Tamplate Files\backup\contact_us.php" />
+    <Content Include="Tamplate Files\backup\header.php" />
+    <Content Include="Tamplate Files\backup\index-2.php" />
+    <Content Include="Tamplate Files\backup\index.php" />
+    <Content Include="Tamplate Files\backup\login.php" />
+    <Content Include="Tamplate Files\backup\product-page.php" />
+    <Content Include="Tamplate Files\backup\product_detail_left.php" />
+    <Content Include="Tamplate Files\backup\product_detail_page.php" />
+    <Content Include="Tamplate Files\backup\product_detail_right.php" />
+    <Content Include="Tamplate Files\backup\single_blog.php" />
+    <Content Include="Tamplate Files\backup\wishlist.php" />
+    <Content Include="Tamplate Files\css\animate.css" />
+    <Content Include="Tamplate Files\css\bootsnav.css" />
+    <Content Include="Tamplate Files\css\bootstrap.css" />
+    <Content Include="Tamplate Files\css\font-awesome.min.css" />
+    <Content Include="Tamplate Files\css\images\ui-bg_diagonals-thick_18_b81900_40x40.html" />
+    <Content Include="Tamplate Files\css\images\ui-bg_diagonals-thick_20_666666_40x40.html" />
+    <Content Include="Tamplate Files\css\images\ui-bg_flat_10_000000_40x100.html" />
+    <Content Include="Tamplate Files\css\images\ui-bg_highlight-soft_75_ffe45c_1x100.html" />
+    <Content Include="Tamplate Files\css\images\ui-icons_222222_256x240.html" />
+    <Content Include="Tamplate Files\css\images\ui-icons_228ef1_256x240.html" />
+    <Content Include="Tamplate Files\css\images\ui-icons_ef8c08_256x240.html" />
+    <Content Include="Tamplate Files\css\images\ui-icons_ffd27a_256x240.html" />
+    <Content Include="Tamplate Files\css\images\ui-icons_ffffff_256x240.html" />
+    <Content Include="Tamplate Files\css\ionicons.min.css" />
+    <Content Include="Tamplate Files\css\jquery-ui.css" />
+    <Content Include="Tamplate Files\css\magnific-popup.css" />
+    <Content Include="Tamplate Files\css\menu.css" />
+    <Content Include="Tamplate Files\css\owl.carousel.css" />
+    <Content Include="Tamplate Files\css\owl.video.play.html" />
+    <Content Include="Tamplate Files\css\style.css" />
+    <Content Include="Tamplate Files\fonts\fontawesome-webfont3e6e.html" />
+    <Content Include="Tamplate Files\fonts\fontawesome-webfont3e6e.svg" />
+    <Content Include="Tamplate Files\fonts\glyphicons-halflings-regular-2.html" />
+    <Content Include="Tamplate Files\fonts\glyphicons-halflings-regular-3.html" />
+    <Content Include="Tamplate Files\fonts\glyphicons-halflings-regular-4.html" />
+    <Content Include="Tamplate Files\fonts\glyphicons-halflings-regular-5.html" />
+    <Content Include="Tamplate Files\fonts\glyphicons-halflings-regular.html" />
+    <Content Include="Tamplate Files\fonts\glyphicons-halflings-regulard41d.html" />
+    <Content Include="Tamplate Files\fonts\ionicons28b5.svg" />
+    <Content Include="Tamplate Files\images\about-page-gaando.jpg" />
+    <Content Include="Tamplate Files\images\apple-touch-icon-114x114.html" />
+    <Content Include="Tamplate Files\images\apple-touch-icon-72x72.html" />
+    <Content Include="Tamplate Files\images\apple-touch-icon.html" />
+    <Content Include="Tamplate Files\images\banner.jpg" />
+    <Content Include="Tamplate Files\images\blog\carlton-blog2.jpg" />
+    <Content Include="Tamplate Files\images\blog\chanel-blog1.jpg" />
+    <Content Include="Tamplate Files\images\blog\dior-blog4.jpg" />
+    <Content Include="Tamplate Files\images\Body Mist\carlton 2.jpg" />
+    <Content Include="Tamplate Files\images\Body Mist\carlton 4.jpg" />
+    <Content Include="Tamplate Files\images\Body Mist\Florence by Mills Face Mist.jpg" />
+    <Content Include="Tamplate Files\images\body spray\n1.jpg" />
+    <Content Include="Tamplate Files\images\body spray\n2.jpg" />
+    <Content Include="Tamplate Files\images\body spray\n4.jpg" />
+    <Content Include="Tamplate Files\images\body spray\w1.jpg" />
+    <Content Include="Tamplate Files\images\body spray\w3.jpg" />
+    <Content Include="Tamplate Files\images\body spray\w4.jpg" />
+    <Content Include="Tamplate Files\images\body spray\w6.jpg" />
+    <Content Include="Tamplate Files\images\brand\brand1.png" />
+    <Content Include="Tamplate Files\images\brand\brand2.png" />
+    <Content Include="Tamplate Files\images\brand\brand3.png" />
+    <Content Include="Tamplate Files\images\brand\brand4.png" />
+    <Content Include="Tamplate Files\images\brand\brand5.png" />
+    <Content Include="Tamplate Files\images\brand\brand6.png" />
+    <Content Include="Tamplate Files\images\brand\brand7.png" />
+    <Content Include="Tamplate Files\images\brand\brand8.png" />
+    <Content Include="Tamplate Files\images\brand\brand9.png" />
+    <Content Include="Tamplate Files\images\breadcrumb.jpg" />
+    <Content Include="Tamplate Files\images\English-icon.gif" />
+    <Content Include="Tamplate Files\images\favicon.png" />
+    <Content Include="Tamplate Files\images\French-icon.gif" />
+    <Content Include="Tamplate Files\images\gd-banner1.jpg" />
+    <Content Include="Tamplate Files\images\German-icon.gif" />
+    <Content Include="Tamplate Files\images\gridlist.png" />
+    <Content Include="Tamplate Files\images\left1.jpg" />
+    <Content Include="Tamplate Files\images\loder.gif" />
+    <Content Include="Tamplate Files\images\logo-black.png" />
+    <Content Include="Tamplate Files\images\logo-white.png" />
+    <Content Include="Tamplate Files\images\Main-Banner1.jpg" />
+    <Content Include="Tamplate Files\images\Main-Banner2.jpg" />
+    <Content Include="Tamplate Files\images\menu-banner1.jpg" />
+    <Content Include="Tamplate Files\images\menu-banner2.jpg" />
+    <Content Include="Tamplate Files\images\menu-banner3.jpg" />
+    <Content Include="Tamplate Files\images\newsbg.jpg" />
+    <Content Include="Tamplate Files\images\perellex-01.html" />
+    <Content Include="Tamplate Files\images\perellex-02.jpg" />
+    <Content Include="Tamplate Files\images\perfume\bg-cover.png" />
+    <Content Include="Tamplate Files\images\perfume\carlton.jpg" />
+    <Content Include="Tamplate Files\images\perfume\carlton1-1.jpg" />
+    <Content Include="Tamplate Files\images\perfume\carlton2.png" />
+    <Content Include="Tamplate Files\images\perfume\carlton3-3.jpg" />
+    <Content Include="Tamplate Files\images\perfume\carlton3.jpg" />
+    <Content Include="Tamplate Files\images\perfume\carlton4-4.jpg" />
+    <Content Include="Tamplate Files\images\perfume\carlton4.jpg" />
+    <Content Include="Tamplate Files\images\perfume\carlton5.jpg" />
+    <Content Include="Tamplate Files\images\perfume\chanel.jpg" />
+    <Content Include="Tamplate Files\images\perfume\chanel2-1.jpg" />
+    <Content Include="Tamplate Files\images\perfume\chanel2-2.jpg" />
+    <Content Include="Tamplate Files\images\perfume\chanel2.jpg" />
+    <Content Include="Tamplate Files\images\perfume\chanel3-3.jpg" />
+    <Content Include="Tamplate Files\images\perfume\chanel3.jpg" />
+    <Content Include="Tamplate Files\images\perfume\chanel4.jpg" />
+    <Content Include="Tamplate Files\images\perfume\chanel5.jpg" />
+    <Content Include="Tamplate Files\images\perfume\daisy.jpg" />
+    <Content Include="Tamplate Files\images\perfume\daisy2.jpg" />
+    <Content Include="Tamplate Files\images\perfume\daisy3-3.jpg" />
+    <Content Include="Tamplate Files\images\perfume\daisy3.jpg" />
+    <Content Include="Tamplate Files\images\perfume\daisy4.jpg" />
+    <Content Include="Tamplate Files\images\perfume\daisy5-5.jpg" />
+    <Content Include="Tamplate Files\images\perfume\daisy5.jpg" />
+    <Content Include="Tamplate Files\images\perfume\dior.jpg" />
+    <Content Include="Tamplate Files\images\perfume\dior1-1.jpg" />
+    <Content Include="Tamplate Files\images\perfume\Florence 1.jpg" />
+    <Content Include="Tamplate Files\images\perfume\Florence 2-2.jpg" />
+    <Content Include="Tamplate Files\images\perfume\Florence 2.jpg" />
+    <Content Include="Tamplate Files\images\perfume\Florence 3-3.jpg" />
+    <Content Include="Tamplate Files\images\perfume\Florence 3.jpg" />
+    <Content Include="Tamplate Files\images\perfume\isak 1-1.jpg" />
+    <Content Include="Tamplate Files\images\perfume\isak 1.jpg" />
+    <Content Include="Tamplate Files\images\perfume\isak 2-2.jpg" />
+    <Content Include="Tamplate Files\images\perfume\isak 2.jpg" />
+    <Content Include="Tamplate Files\images\perfume\isak 3.jpg" />
+    <Content Include="Tamplate Files\images\perfume\isak 4.jpg" />
+    <Content Include="Tamplate Files\images\perfume\isak 5-5.jpg" />
+    <Content Include="Tamplate Files\images\perfume\isak 5.jpg" />
+    <Content Include="Tamplate Files\images\perfume\renee.jpg" />
+    <Content Include="Tamplate Files\images\perfume\renee1-1.jpg" />
+    <Content Include="Tamplate Files\images\perfume\vs1-1.jpg" />
+    <Content Include="Tamplate Files\images\perfume\vs1.jpg" />
+    <Content Include="Tamplate Files\images\perfume\vs2-2.jpg" />
+    <Content Include="Tamplate Files\images\perfume\vs2.jpg" />
+    <Content Include="Tamplate Files\images\perfume\vs4.jpg" />
+    <Content Include="Tamplate Files\images\perfume\vs5-5.jpg" />
+    <Content Include="Tamplate Files\images\perfume\vs5.jpg" />
+    <Content Include="Tamplate Files\images\perfume\Vs_mob.jpg" />
+    <Content Include="Tamplate Files\images\scroll.png" />
+    <Content Include="Tamplate Files\images\select.png" />
+    <Content Include="Tamplate Files\images\sprite.png" />
+    <Content Include="Tamplate Files\images\sub1.jpg" />
+    <Content Include="Tamplate Files\images\sub2.jpg" />
+    <Content Include="Tamplate Files\images\sub3.jpg" />
+    <Content Include="Tamplate Files\images\t1.png" />
+    <Content Include="Tamplate Files\images\t2.png" />
+    <Content Include="Tamplate Files\images\t3.png" />
+    <Content Include="Tamplate Files\images\tm1.jpg" />
+    <Content Include="Tamplate Files\images\tm2.jpg" />
+    <Content Include="Tamplate Files\images\tm3.jpg" />
+    <Content Include="Tamplate Files\images\tm4.jpg" />
+    <Content Include="Tamplate Files\images\tm5.jpg" />
+    <Content Include="Tamplate Files\images\user1.jpg" />
+    <Content Include="Tamplate Files\images\user2.jpg" />
+    <Content Include="Tamplate Files\images\user3.jpg" />
+    <Content Include="Tamplate Files\js\bootsnav.js" />
+    <Content Include="Tamplate Files\js\bootstrap.min.js" />
+    <Content Include="Tamplate Files\js\custom.js" />
+    <Content Include="Tamplate Files\js\jquery-ui.js" />
+    <Content Include="Tamplate Files\js\jquery.firstVisitPopup.js" />
+    <Content Include="Tamplate Files\js\jquery.magnific-popup.js" />
+    <Content Include="Tamplate Files\js\jQuery_v3.1.1.min.js" />
+    <Content Include="Tamplate Files\js\mail.js" />
+    <Content Include="Tamplate Files\js\map.js" />
+    <Content Include="Tamplate Files\js\owl.carousel.min.js" />
+    <Content Include="Tamplate Files\webpages\account.aspx" />
+    <Content Include="User\about.aspx" />
+    <Content Include="User\account.aspx" />
+    <Content Include="User\blog_page.aspx" />
+    <Content Include="User\cart_page.aspx" />
+    <Content Include="User\category_page.aspx" />
+    <Content Include="User\category_page_3col.aspx" />
+    <Content Include="User\category_page_left.aspx" />
+    <Content Include="User\category_page_right.aspx" />
+    <Content Include="User\checkout_page.aspx" />
+    <Content Include="User\contact_us.aspx" />
+    <Content Include="User\index.aspx" />
+    <Content Include="User\login.aspx" />
+    <Content Include="User\product_detail_page.aspx" />
+    <Content Include="User\single_blog.aspx" />
+    <Content Include="Tamplate Files\webpages\about.aspx" />
+    <Content Include="User\wishlist.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tamplate Files\webpages\account.aspx.cs">
+      <DependentUpon>account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tamplate Files\webpages\account.aspx.designer.cs">
+      <DependentUpon>account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\account.aspx.cs">
+      <DependentUpon>account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\account.aspx.designer.cs">
+      <DependentUpon>account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\blog_page.aspx.cs">
+      <DependentUpon>blog_page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\blog_page.aspx.designer.cs">
+      <DependentUpon>blog_page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\cart_page.aspx.cs">
+      <DependentUpon>cart_page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\cart_page.aspx.designer.cs">
+      <DependentUpon>cart_page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\category_page.aspx.cs">
+      <DependentUpon>category_page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\category_page.aspx.designer.cs">
+      <DependentUpon>category_page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\category_page_3col.aspx.cs">
+      <DependentUpon>category_page_3col.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\category_page_3col.aspx.designer.cs">
+      <DependentUpon>category_page_3col.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\category_page_left.aspx.cs">
+      <DependentUpon>category_page_left.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\category_page_left.aspx.designer.cs">
+      <DependentUpon>category_page_left.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\category_page_right.aspx.cs">
+      <DependentUpon>category_page_right.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\category_page_right.aspx.designer.cs">
+      <DependentUpon>category_page_right.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\checkout_page.aspx.cs">
+      <DependentUpon>checkout_page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\checkout_page.aspx.designer.cs">
+      <DependentUpon>checkout_page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\contact_us.aspx.cs">
+      <DependentUpon>contact_us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\contact_us.aspx.designer.cs">
+      <DependentUpon>contact_us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\product_detail_page.aspx.cs">
+      <DependentUpon>product_detail_page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\product_detail_page.aspx.designer.cs">
+      <DependentUpon>product_detail_page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\single_blog.aspx.cs">
+      <DependentUpon>single_blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\single_blog.aspx.designer.cs">
+      <DependentUpon>single_blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\User.Master.cs">
+      <DependentUpon>User.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\User.Master.designer.cs">
+      <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Tamplate Files\webpages\about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tamplate Files\webpages\about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\wishlist.aspx.cs">
+      <DependentUpon>wishlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\wishlist.aspx.designer.cs">
+      <DependentUpon>wishlist.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Tamplate Files\fonts\fontawesome-webfont3e6e.eot" />
+    <Content Include="Tamplate Files\fonts\fontawesome-webfont3e6e.ttf" />
+    <Content Include="Tamplate Files\fonts\fontawesome-webfont3e6e.woff" />
+    <Content Include="Tamplate Files\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="Tamplate Files\fonts\ionicons28b5.eot" />
+    <Content Include="Tamplate Files\fonts\ionicons28b5.ttf" />
+    <Content Include="Tamplate Files\fonts\ionicons28b5.woff" />
+    <Content Include="User\User.Master" />
+    <Content Include="Tamplate Files\images\Body Mist\Aqualogica 1.webp" />
+    <Content Include="Tamplate Files\images\Body Mist\Aqualogica 2.webp" />
+    <Content Include="Tamplate Files\images\Body Mist\Aqualogica 3.webp" />
+    <Content Include="Tamplate Files\images\Body Mist\Aqualogica 4.webp" />
+    <Content Include="Tamplate Files\images\Body Mist\Aqualogica 5.webp" />
+    <Content Include="Tamplate Files\images\Body Mist\carlton 1.webp" />
+    <Content Include="Tamplate Files\images\Body Mist\carlton 3.webp" />
+    <Content Include="Tamplate Files\images\Body Mist\carlton 5.avif" />
+    <Content Include="Tamplate Files\images\body spray\n3.webp" />
+    <Content Include="Tamplate Files\images\body spray\w2.avif" />
+    <Content Include="Tamplate Files\images\body spray\w5.webp" />
+    <Content Include="Tamplate Files\images\body spray\w7.webp" />
+    <Content Include="Tamplate Files\images\perfume\bg-chanel.avif" />
+    <Content Include="Tamplate Files\images\perfume\bg-vs.avif" />
+    <Content Include="Tamplate Files\images\perfume\isak 2-2.webp" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60868</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:60868/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
