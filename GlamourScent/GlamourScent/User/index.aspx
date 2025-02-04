@@ -13,7 +13,7 @@
           <div class="text3"> over 6000 plants, great offers </div>
           <div class="btn-banner"> <a href="#">shop now</a></div>
         </div>
-        <a href="#"><img src="../Tamplate Files/images/gd-banner1.jpg" alt="Main Banner" class="img-responsive" /></a></div>
+        <a href="#"><img src="../Tamplate Files/images/la nuit.jpg" alt="Main Banner" class="img-responsive" /></a></div>
       <div class="item">
         <div class="banner-info container">
           <div class="text1"> shop garden plant online</div>
@@ -29,7 +29,7 @@
   <!-- =====  SUB BANNER  STRAT ===== -->
   <!-- =====  SUB BANNER END  ===== -->
   <!-- =====  CONTAINER START  ===== -->
-<div class="container">
+<div class="container">u
     <div class="row">
       <div class="col-md-12"> 
         <!-- =====  PRODUCT TAB  ===== -->
@@ -253,7 +253,7 @@
                         <div class="compare"><a href="#"><span>Compare</span></a></div>
                         <div class="add-to-cart"><a href="#"><span>Add to cart</span></a></div>
                       </div>
-                      <div class="image product-imageblock"> <a href="product_detail_page.aspx"> <img data-name="product_image" src="../Tamplate Files/images/perfume/product1.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive"> <img src="../Tamplate Files/images/perfume/product1-1.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive"> </a> </div>
+                      <div class="image product-imageblock"> <a href="product_detail_page.aspx"> <img data-name="product_image" src="../Tamplate Files/images/bodymist/aqualogica1.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive"> <img src="../Tamplate Files/images/perfume/product1-1.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive"> </a> </div>
                       <div class="caption product-detail text-center">
                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New Aviator Sunglasses</a></h6>
                         <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>
