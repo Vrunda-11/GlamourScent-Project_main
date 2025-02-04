@@ -67,6 +67,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Glamour.mdf" />
+    <Content Include="App_Data\GlamourScent.mdf" />
+    <Content Include="App_Data\GlamourScent_log.ldf">
+      <DependentUpon>GlamourScent.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\Glamour_log.ldf">
+      <DependentUpon>Glamour.mdf</DependentUpon>
+    </Content>
     <Content Include="Global.asax" />
     <Content Include="Tamplate Files\backup\about.php" />
     <Content Include="Tamplate Files\backup\account.php" />
@@ -424,7 +432,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>

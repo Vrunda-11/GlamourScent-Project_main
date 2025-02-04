@@ -204,12 +204,12 @@
               <div class="panel-body">
                 <div class="row">
                   <div class="col-lg-12">
-                    <form id="login-form" action="#" method="post">
+                    
                       <div class="form-group">
-                        <input type="text" name="username" id="username1" tabindex="1" class="form-control" placeholder="Username" value="">
+                         <asp:TextBox ID="TextBox5" runat="server" Height="40px" Width="675px"></asp:TextBox>
                       </div>
                       <div class="form-group">
-                        <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+                         <asp:TextBox ID="TextBox6" runat="server" Height="40px" Width="675px"></asp:TextBox>
                       </div>
                       <div class="form-group text-center">
                         <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
@@ -218,7 +218,7 @@
                       <div class="form-group">
                         <div class="row">
                           <div class="col-sm-6 col-sm-offset-3">
-                            <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In">
+                            &nbsp;<asp:Button ID="Button2" runat="server" BackColor="#8BBA52" ForeColor="White" Height="41px" Text="login" Width="675px" style="margin-left:-170px"/>
                           </div>
                         </div>
                       </div>
@@ -229,28 +229,29 @@
                           </div>
                         </div>
                       </div>
-                    </form>
-                    <form id="register-form" action="#" method="post">
+                    
+                    
                       <div class="form-group">
-                        <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+                        <asp:TextBox ID="TextBox1" runat="server" Height="40px" Width="675px" ></asp:TextBox>
                       </div>
                       <div class="form-group">
-                        <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+                         <asp:TextBox ID="TextBox2" runat="server" Height="40px" Width="675px"></asp:TextBox>
                       </div>
                       <div class="form-group">
-                        <input type="password" name="password" id="password2" tabindex="2" class="form-control" placeholder="Password">
+                         <asp:TextBox ID="TextBox3" runat="server" Height="40px" Width="675px"></asp:TextBox>
                       </div>
                       <div class="form-group">
-                        <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+                         <asp:TextBox ID="TextBox4" runat="server" Height="40px" Width="675px"></asp:TextBox>
                       </div>
+                        <br />
                       <div class="form-group">
                         <div class="row">
                           <div class="col-sm-6 col-sm-offset-3">
-                            <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Register Now">
+                              
+                              <asp:Button ID="Button1" runat="server" BackColor="#8BBA52" ForeColor="White" Height="41px" Text="Register Now" Width="675px" Style="margin-left:-170px"/>
                           </div>
                         </div>
                       </div>
-                    </form>
                   </div>
                 </div>
               </div>
