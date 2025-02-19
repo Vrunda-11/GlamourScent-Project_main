@@ -135,10 +135,10 @@ hr {
 	padding: 5px 15px;
 	color: #9E9E9E;
 }
-.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
-	background-color: #80b435;
-	color: #fff;
-}
+	.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+		background-color: #80b435;
+		color: #fff;
+	}
 ul {
 	list-style: none;
 	padding-left: 0px;
@@ -501,7 +501,8 @@ h6 {
 }
 /* ----------------------------------------------
 	1.4 Button 
------------------------------------------------ */.btn {
+----------------------------------------------- */
+.btn {
 	background: #80b435 none repeat scroll 0 0;
 	border-radius: 0;
 	color: #fff;
@@ -1724,7 +1725,7 @@ blockquote {
 	background: transparent url("../images/sprite.png") no-repeat scroll -150px -469px;
 	overflow: hidden;
 	height: 30px;
-	width: 29px;
+	width: 147px;
 	text-align: center;
 	cursor: pointer;
 	margin: 5px;
@@ -2320,34 +2321,53 @@ table.table {
 }
  
  
-/* =====  RESPONSIVE CSS START  =====*/ 
+/* =====  RESPONSIVE CSS START  =====*/
+
+@media (max-width:100%){
+	#maintextbox {
+		width: 670px;
+	}
+}
 
 @media (max-width:1199px) {
-.four-col-work .grid-item {
-	width: 33.33%;
-}
-.product-list .product-thumb .button-group {
-	bottom: 0;
-}
-#menu > li > a {
-	padding: 55px 7px;
-}
-.product-layout.product-list .image.product-imageblock {
-	width: 46%;
-}
-.product-list .product-thumb .caption {
-	width: 50%;
-}
+
+	#maintextbox {
+		width: 670px;
+	}
+
+	.four-col-work .grid-item {
+		width: 33.33%;
+	}
+
+	.product-list .product-thumb .button-group {
+		bottom: 0;
+	}
+
+	#menu > li > a {
+		padding: 55px 7px;
+	}
+
+	.product-layout.product-list .image.product-imageblock {
+		width: 46%;
+	}
+
+	.product-list .product-thumb .caption {
+		width: 50%;
+	}
 }
  @media (min-width: 992px) and (max-width: 1199px) {
 .about-title {
 	font-size: 40px;
 	line-height: 55px;
 }
+	
 }
 /*----------------------------------*/
 
 @media (max-width:991px) {
+	#maintextbox {
+		width: 370px;
+	}
 .banner-info .text1 {
 	font-size: 72px;
 }

@@ -65,12 +65,12 @@
         <!-- Start Header Navigation -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class="fa fa-bars"></i> </button>
-          <a class="navbar-brand" href="index-2.html"> <img src="images/logo-white.png" class="logo logo-display" alt=""> <img src="images/logo-black.png" class="logo logo-scrolled" alt=""> </a> </div>
+          <a class="navbar-brand" href="index.aspx"> <img src="images/logo-white.png" class="logo logo-display" alt=""> <img src="images/logo-black.png" class="logo logo-scrolled" alt=""> </a> </div>
         <!-- End Header Navigation --> 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-menu">
           <ul class="nav navbar-nav navbar-left pull-right" data-in="fadeInDown" data-out="fadeOutUp">
-            <li class="active"><a href="index-2.html">Home</a></li>
+            <li class="active"><a href="index.aspx">Home</a></li>
             <li class="dropdown megamenu-fw"> <a href="category_page.html" class="dropdown-toggle" data-toggle="dropdown">Collection</a>
               <ul class="dropdown-menu megamenu-content" role="menu">
                 <li>
@@ -219,7 +219,7 @@
   <div class="breadcrumb">
     <h1>Blog</h1>
     <ul>
-      <li><a href="index-2.html">Home</a></li>
+      <li><a href="index.aspx">Home</a></li>
       <li class="active">Blog</li>
     </ul>
   </div>

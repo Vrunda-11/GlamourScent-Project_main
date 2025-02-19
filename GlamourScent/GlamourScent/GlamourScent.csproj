@@ -67,13 +67,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Glamour.mdf" />
+    <Content Include="Admin\Adminlogin.aspx" />
+    <Content Include="Admin\Feedback.aspx" />
+    <Content Include="Admin\Index.aspx" />
+    <Content Include="Admin\Orders.aspx" />
+    <Content Include="Admin\Products.aspx" />
+    <Content Include="Admin\Users.aspx" />
     <Content Include="App_Data\GlamourScent.mdf" />
     <Content Include="App_Data\GlamourScent_log.ldf">
       <DependentUpon>GlamourScent.mdf</DependentUpon>
-    </Content>
-    <Content Include="App_Data\Glamour_log.ldf">
-      <DependentUpon>Glamour.mdf</DependentUpon>
     </Content>
     <Content Include="Global.asax" />
     <Content Include="Tamplate Files\backup\about.php" />
@@ -134,16 +136,55 @@
     <Content Include="Tamplate Files\images\blog\carlton-blog2.jpg" />
     <Content Include="Tamplate Files\images\blog\chanel-blog1.jpg" />
     <Content Include="Tamplate Files\images\blog\dior-blog4.jpg" />
-    <Content Include="Tamplate Files\images\Body Mist\carlton 2.jpg" />
-    <Content Include="Tamplate Files\images\Body Mist\carlton 4.jpg" />
-    <Content Include="Tamplate Files\images\Body Mist\Florence by Mills Face Mist.jpg" />
-    <Content Include="Tamplate Files\images\body spray\n1.jpg" />
-    <Content Include="Tamplate Files\images\body spray\n2.jpg" />
-    <Content Include="Tamplate Files\images\body spray\n4.jpg" />
-    <Content Include="Tamplate Files\images\body spray\w1.jpg" />
-    <Content Include="Tamplate Files\images\body spray\w3.jpg" />
-    <Content Include="Tamplate Files\images\body spray\w4.jpg" />
-    <Content Include="Tamplate Files\images\body spray\w6.jpg" />
+    <Content Include="Tamplate Files\images\bodymist\aqualogica1-1.jpg" />
+    <Content Include="Tamplate Files\images\bodymist\aqualogica1.jpg" />
+    <Content Include="Tamplate Files\images\bodymist\aqualogica2-2.jpg" />
+    <Content Include="Tamplate Files\images\bodymist\aqualogica2.jpg" />
+    <Content Include="Tamplate Files\images\bodymist\aqualogica3-3.jpg" />
+    <Content Include="Tamplate Files\images\bodymist\aqualogica3.jpg" />
+    <Content Include="Tamplate Files\images\bodymist\aqualogica5-5.jpg" />
+    <Content Include="Tamplate Files\images\bodymist\Aqualogica5.jpg" />
+    <Content Include="Tamplate Files\images\bodymist\carlton1-1.jpg" />
+    <Content Include="Tamplate Files\images\bodymist\carlton1.jpg" />
+    <Content Include="Tamplate Files\images\bodymist\carlton2-2.jpg" />
+    <Content Include="Tamplate Files\images\bodymist\carlton2.jpg" />
+    <Content Include="Tamplate Files\images\bodymist\carlton3-3.jpg" />
+    <Content Include="Tamplate Files\images\bodymist\carlton3.jpg" />
+    <Content Include="Tamplate Files\images\bodymist\carlton5-5.jpg" />
+    <Content Include="Tamplate Files\images\bodymist\carlton5.jpg" />
+    <Content Include="Tamplate Files\images\bodymist\florence1-1.jpg" />
+    <Content Include="Tamplate Files\images\bodymist\florence1.jpg" />
+    <Content Include="Tamplate Files\images\bodymist\florence2-2.jpg" />
+    <Content Include="Tamplate Files\images\bodymist\florence2.jpg" />
+    <Content Include="Tamplate Files\images\bodymist\janeiro1-1.jpg" />
+    <Content Include="Tamplate Files\images\bodymist\janeiro1.jpg" />
+    <Content Include="Tamplate Files\images\bodymist\janeiro2-2.jpg" />
+    <Content Include="Tamplate Files\images\bodymist\janeiro2.jpg" />
+    <Content Include="Tamplate Files\images\bodyspray\n1-1.jpg" />
+    <Content Include="Tamplate Files\images\bodyspray\n1.jpg" />
+    <Content Include="Tamplate Files\images\bodyspray\n2-2.jpg" />
+    <Content Include="Tamplate Files\images\bodyspray\n2.jpg" />
+    <Content Include="Tamplate Files\images\bodyspray\n3-3.jpg" />
+    <Content Include="Tamplate Files\images\bodyspray\n3.jpg" />
+    <Content Include="Tamplate Files\images\bodyspray\n4.jpg" />
+    <Content Include="Tamplate Files\images\bodyspray\n5-5.jpg" />
+    <Content Include="Tamplate Files\images\bodyspray\n5.jpg" />
+    <Content Include="Tamplate Files\images\bodyspray\ni4-4.jpg" />
+    <Content Include="Tamplate Files\images\bodyspray\Screenshot 2025-02-06 211544.jpg" />
+    <Content Include="Tamplate Files\images\bodyspray\w1-1.jpg" />
+    <Content Include="Tamplate Files\images\bodyspray\w1.jpg" />
+    <Content Include="Tamplate Files\images\bodyspray\w2-2.jpg" />
+    <Content Include="Tamplate Files\images\bodyspray\w2.jpg" />
+    <Content Include="Tamplate Files\images\bodyspray\w3-3.jpg" />
+    <Content Include="Tamplate Files\images\bodyspray\w3.jpg" />
+    <Content Include="Tamplate Files\images\bodyspray\w4-4.jpg" />
+    <Content Include="Tamplate Files\images\bodyspray\w4.jpg" />
+    <Content Include="Tamplate Files\images\bodyspray\w5-5.jpg" />
+    <Content Include="Tamplate Files\images\bodyspray\w5.jpg" />
+    <Content Include="Tamplate Files\images\bodyspray\w6-6.jpg" />
+    <Content Include="Tamplate Files\images\bodyspray\w6.jpg" />
+    <Content Include="Tamplate Files\images\bodyspray\w7-7.jpg" />
+    <Content Include="Tamplate Files\images\bodyspray\w7.jpg" />
     <Content Include="Tamplate Files\images\brand\brand1.png" />
     <Content Include="Tamplate Files\images\brand\brand2.png" />
     <Content Include="Tamplate Files\images\brand\brand3.png" />
@@ -251,23 +292,81 @@
     <Content Include="Tamplate Files\webpages\account.aspx" />
     <Content Include="User\about.aspx" />
     <Content Include="User\account.aspx" />
+    <Content Include="User\aqualogica2mist.aspx" />
+    <Content Include="User\aqualogica1mist.aspx" />
     <Content Include="User\blog_page.aspx" />
+    <Content Include="User\carltonmist.aspx" />
     <Content Include="User\cart_page.aspx" />
     <Content Include="User\category_page.aspx" />
     <Content Include="User\category_page_3col.aspx" />
     <Content Include="User\category_page_left.aspx" />
     <Content Include="User\category_page_right.aspx" />
+    <Content Include="User\nivea.aspx" />
+    <Content Include="User\perfumechannel.aspx" />
     <Content Include="User\checkout_page.aspx" />
     <Content Include="User\contact_us.aspx" />
+    <Content Include="User\perfumedaisy.aspx" />
+    <Content Include="User\perfumeflorence.aspx" />
     <Content Include="User\index.aspx" />
     <Content Include="User\login.aspx" />
-    <Content Include="User\product_detail_page.aspx" />
+    <Content Include="User\Register.aspx" />
     <Content Include="User\single_blog.aspx" />
     <Content Include="Tamplate Files\webpages\about.aspx" />
+    <Content Include="User\wottagirl2.aspx" />
     <Content Include="User\wishlist.aspx" />
+    <Content Include="User\wottagirl1.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\admin.Master.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\admin.Master.designer.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Adminlogin.aspx.cs">
+      <DependentUpon>Adminlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Adminlogin.aspx.designer.cs">
+      <DependentUpon>Adminlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Orders.aspx.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Orders.aspx.designer.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -293,12 +392,33 @@
     <Compile Include="User\account.aspx.designer.cs">
       <DependentUpon>account.aspx</DependentUpon>
     </Compile>
+    <Compile Include="User\aqualogica2mist.aspx.cs">
+      <DependentUpon>aqualogica2mist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\aqualogica2mist.aspx.designer.cs">
+      <DependentUpon>aqualogica2mist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\aqualogica1mist.aspx.cs">
+      <DependentUpon>aqualogica1mist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\aqualogica1mist.aspx.designer.cs">
+      <DependentUpon>aqualogica1mist.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User\blog_page.aspx.cs">
       <DependentUpon>blog_page.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="User\blog_page.aspx.designer.cs">
       <DependentUpon>blog_page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\carltonmist.aspx.cs">
+      <DependentUpon>carltonmist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\carltonmist.aspx.designer.cs">
+      <DependentUpon>carltonmist.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\cart_page.aspx.cs">
       <DependentUpon>cart_page.aspx</DependentUpon>
@@ -335,6 +455,20 @@
     <Compile Include="User\category_page_right.aspx.designer.cs">
       <DependentUpon>category_page_right.aspx</DependentUpon>
     </Compile>
+    <Compile Include="User\nivea.aspx.cs">
+      <DependentUpon>nivea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\nivea.aspx.designer.cs">
+      <DependentUpon>nivea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\perfumechannel.aspx.cs">
+      <DependentUpon>perfumechannel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\perfumechannel.aspx.designer.cs">
+      <DependentUpon>perfumechannel.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User\checkout_page.aspx.cs">
       <DependentUpon>checkout_page.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -348,6 +482,20 @@
     </Compile>
     <Compile Include="User\contact_us.aspx.designer.cs">
       <DependentUpon>contact_us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\perfumedaisy.aspx.cs">
+      <DependentUpon>perfumedaisy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\perfumedaisy.aspx.designer.cs">
+      <DependentUpon>perfumedaisy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\perfumeflorence.aspx.cs">
+      <DependentUpon>perfumeflorence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\perfumeflorence.aspx.designer.cs">
+      <DependentUpon>perfumeflorence.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -363,12 +511,12 @@
     <Compile Include="User\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="User\product_detail_page.aspx.cs">
-      <DependentUpon>product_detail_page.aspx</DependentUpon>
+    <Compile Include="User\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="User\product_detail_page.aspx.designer.cs">
-      <DependentUpon>product_detail_page.aspx</DependentUpon>
+    <Compile Include="User\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\single_blog.aspx.cs">
       <DependentUpon>single_blog.aspx</DependentUpon>
@@ -391,6 +539,13 @@
     <Compile Include="Tamplate Files\webpages\about.aspx.designer.cs">
       <DependentUpon>about.aspx</DependentUpon>
     </Compile>
+    <Compile Include="User\wottagirl2.aspx.cs">
+      <DependentUpon>wottagirl2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\wottagirl2.aspx.designer.cs">
+      <DependentUpon>wottagirl2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User\wishlist.aspx.cs">
       <DependentUpon>wishlist.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -398,8 +553,19 @@
     <Compile Include="User\wishlist.aspx.designer.cs">
       <DependentUpon>wishlist.aspx</DependentUpon>
     </Compile>
+    <Compile Include="User\wottagirl1.aspx.cs">
+      <DependentUpon>wottagirl1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\wottagirl1.aspx.designer.cs">
+      <DependentUpon>wottagirl1.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\.vs\Admin\config\applicationhost.config" />
+    <Content Include="Admin\.vs\ProjectSettings.json" />
+    <Content Include="Admin\.vs\slnx.sqlite" />
+    <Content Include="Admin\admin.Master" />
     <None Include="packages.config" />
     <Content Include="Tamplate Files\fonts\fontawesome-webfont3e6e.eot" />
     <Content Include="Tamplate Files\fonts\fontawesome-webfont3e6e.ttf" />
@@ -409,18 +575,6 @@
     <Content Include="Tamplate Files\fonts\ionicons28b5.ttf" />
     <Content Include="Tamplate Files\fonts\ionicons28b5.woff" />
     <Content Include="User\User.Master" />
-    <Content Include="Tamplate Files\images\Body Mist\Aqualogica 1.webp" />
-    <Content Include="Tamplate Files\images\Body Mist\Aqualogica 2.webp" />
-    <Content Include="Tamplate Files\images\Body Mist\Aqualogica 3.webp" />
-    <Content Include="Tamplate Files\images\Body Mist\Aqualogica 4.webp" />
-    <Content Include="Tamplate Files\images\Body Mist\Aqualogica 5.webp" />
-    <Content Include="Tamplate Files\images\Body Mist\carlton 1.webp" />
-    <Content Include="Tamplate Files\images\Body Mist\carlton 3.webp" />
-    <Content Include="Tamplate Files\images\Body Mist\carlton 5.avif" />
-    <Content Include="Tamplate Files\images\body spray\n3.webp" />
-    <Content Include="Tamplate Files\images\body spray\w2.avif" />
-    <Content Include="Tamplate Files\images\body spray\w5.webp" />
-    <Content Include="Tamplate Files\images\body spray\w7.webp" />
     <Content Include="Tamplate Files\images\perfume\bg-chanel.avif" />
     <Content Include="Tamplate Files\images\perfume\bg-vs.avif" />
     <Content Include="Tamplate Files\images\perfume\isak 2-2.webp" />
@@ -432,6 +586,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Admin\.vs\Admin\v16\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
